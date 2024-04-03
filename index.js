@@ -36,3 +36,4 @@ btnColor.addEventListener('click', function() {
     console.log(yourTitle);
     yourTitle.style.color = 'rgb(179, 110, 198)'; 
 })
+
