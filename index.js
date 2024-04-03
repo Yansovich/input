@@ -7,13 +7,15 @@ console.log(yourTitle.textContent);
 
 screenInp.addEventListener('change', function() {
     yourTitle.textContent = screenInp.value;
-  })
+})
 
+
+// 1 вариант 
 
 const btnColor = document.querySelector('.btn');
 console.log(btnColor);
 
-const listColors = ['rgb(179, 110, 198)', 'rgb(179, 110, 197)', 'rgb(179, 110, 196)']
+const listColors = ['rgb(101, 11, 111)', 'rgb(201, 22, 122)', 'rgb(103, 33, 133)', 'rgb(401, 44, 144)', 'rgb(105, 55, 155)']
 let count = 0;
 
 function changeColor() {
@@ -22,10 +24,15 @@ function changeColor() {
     }else{
         count += 1; 
     }
-    yourTitle.textContent.style.color = listColors[count];
+    yourTitle.style.color = listColors[count];
 }
 
-btnColor.addEventListener('click', changeColor 
+btnColor.addEventListener('click', changeColor)
 
-    // yourTitle.textContent = changeColor(); 
-)
+
+// 2 вариант 
+
+btnColor.addEventListener('click', function() {
+    console.log(yourTitle);
+    yourTitle.style.color = 'rgb(179, 110, 198)'; 
+})

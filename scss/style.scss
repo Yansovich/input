@@ -6,7 +6,6 @@
     padding: 3rem;
     width:60rem;
     height: 50rem;
-    border: 1px solid lightblue;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -23,8 +22,6 @@
         
     }
     input:active {
-        // transform: scale(0.95);
-        // transition-duration: 0.1s;
         border: 1px solid rgb(93, 107, 107);
     }
     .btn:active {
